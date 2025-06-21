@@ -1,0 +1,549 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --primary: #4f46e5;
+  --secondary: #7c3aed;
+  --accent: #10b981;
+  --dark: #111827;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--dark);
+  color: #fff;
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+  position: relative;
+}
+
+/* Ensure all containers don't overflow */
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive blob positioning */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  z-index: -1;
+  opacity: 0.4;
+}
+
+/* Adjust blob sizes for mobile */
+@media (max-width: 768px) {
+  .blob {
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  .blob:nth-child(1) {
+    top: 10% !important;
+    left: 5% !important;
+  }
+
+  .blob:nth-child(2) {
+    top: 70% !important;
+    right: 2% !important;
+  }
+
+  .blob:nth-child(3) {
+    top: 90% !important;
+    left: 10% !important;
+  }
+}
+
+/* Ensure matrix canvas is responsive */
+.matrix-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100%;
+  z-index: -1;
+  max-width: 100vw;
+}
+
+/* Responsive hero section */
+@media (max-width: 768px) {
+  .hero-animated-bg {
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  .typewriter {
+    white-space: normal;
+    overflow: visible;
+    border-right: none;
+    animation: none;
+  }
+
+  .code-window {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
+
+/* Ensure all sections don't overflow */
+section {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Responsive grid adjustments */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .lg\:grid-cols-6 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Responsive flex adjustments */
+@media (max-width: 768px) {
+  .md\:flex-row {
+    flex-direction: column !important;
+  }
+
+  .md\:w-1\/2,
+  .md\:w-2\/5,
+  .md\:w-3\/5 {
+    width: 100% !important;
+  }
+}
+
+/* Ensure text doesn't overflow */
+@media (max-width: 768px) {
+  .text-4xl {
+    font-size: 2rem !important;
+    line-height: 2.5rem !important;
+  }
+
+  .text-6xl {
+    font-size: 3rem !important;
+    line-height: 1 !important;
+  }
+
+  .text-xl {
+    font-size: 1.125rem !important;
+    line-height: 1.75rem !important;
+  }
+}
+
+/* Responsive padding adjustments */
+@media (max-width: 768px) {
+  .px-6 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .px-8 {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
+  .py-24 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #4f46e5, #7c3aed, #10b981);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 300% 300%;
+  animation: gradient 6s ease infinite;
+}
+
+.gradient-bg {
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+  background-size: 200% 200%;
+  animation: gradient 6s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.typing-effect {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #4f46e5;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #4f46e5;
+  }
+}
+
+.rounded-square {
+  border-radius: 12px !important;
+  overflow: hidden;
+  width: 500px;
+  height: 500px;
+  box-shadow: 0 0 30px rgba(79, 70, 229, 0.3), 0 0 60px rgba(147, 51, 234, 0.2);
+  clip-path: none !important;
+}
+
+/* Fix for About section rounded-square causing independent scroll */
+#about .rounded-square {
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  box-shadow: 0 0 30px rgba(79, 70, 229, 0.3), 0 0 60px rgba(147, 51, 234, 0.2);
+  border-radius: 12px !important;
+  clip-path: none !important;
+}
+
+#about .relative {
+  overflow: hidden;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensure the rotated background doesn't cause overflow */
+#about .absolute.inset-0 {
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  width: 500px;
+  height: 500px;
+  border-radius: 12px;
+  box-shadow: 0 0 40px rgba(79, 70, 229, 0.4), 0 0 80px rgba(147, 51, 234, 0.3);
+}
+
+/* Responsive adjustments for About section */
+@media (max-width: 768px) {
+  #about .rounded-square {
+    transform: none !important;
+    scale: 1 !important;
+    width: 400px !important;
+    height: 400px !important;
+    margin: 0 auto !important;
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3),
+      0 0 40px rgba(147, 51, 234, 0.2) !important;
+  }
+
+  #about .absolute.inset-0 {
+    transform: none !important;
+    scale: 1 !important;
+    width: 400px !important;
+    height: 400px !important;
+    box-shadow: 0 0 25px rgba(79, 70, 229, 0.4),
+      0 0 50px rgba(147, 51, 234, 0.3) !important;
+  }
+
+  #about .md\:w-2\/5 {
+    width: 100% !important;
+    margin-bottom: 2rem;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  #about .md\:w-3\/5 {
+    width: 100% !important;
+    padding-left: 0 !important;
+  }
+}
+
+/* Even smaller on very small screens */
+@media (max-width: 480px) {
+  #about .rounded-square {
+    width: 320px !important;
+    height: 320px !important;
+    box-shadow: 0 0 15px rgba(79, 70, 229, 0.3),
+      0 0 30px rgba(147, 51, 234, 0.2) !important;
+  }
+
+  #about .absolute.inset-0 {
+    width: 320px !important;
+    height: 320px !important;
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.4),
+      0 0 40px rgba(147, 51, 234, 0.3) !important;
+  }
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Glassmorphism effect for navbar */
+.glass-navbar {
+  background: rgba(31, 41, 55, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Avatar style */
+.navbar-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #4f46e5;
+  margin-right: 12px;
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.2);
+}
+
+/* Hero animated gradient background */
+.hero-animated-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(120deg, #4f46e5 0%, #7c3aed 50%, #10b981 100%);
+  background-size: 200% 200%;
+  animation: heroGradientMove 8s ease-in-out infinite;
+  opacity: 0.5;
+}
+
+@keyframes heroGradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Drop shadow for code window */
+.code-window {
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25),
+    0 1.5px 8px 0 rgba(16, 185, 129, 0.08);
+}
+
+/* Typewriter effect for hero headline */
+.typewriter {
+  overflow: hidden;
+  border-right: 0.15em solid #4f46e5;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.05em;
+  animation: typing-hero 3.5s steps(40, end),
+    blink-caret-hero 0.75s step-end infinite;
+}
+
+@keyframes typing-hero {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret-hero {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #4f46e5;
+  }
+}
+
+/* Ensure scroll indicator doesn't cause overflow */
+.scroll-explore-indicator {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  max-width: 100vw;
+}
+
+.scroll-explore-indicator.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Additional responsive fixes */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .text-5xl {
+    font-size: 2.5rem !important;
+    line-height: 1 !important;
+  }
+
+  .text-3xl {
+    font-size: 1.875rem !important;
+    line-height: 2.25rem !important;
+  }
+
+  .text-2xl {
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
+  }
+
+  .text-lg {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+  }
+}
+
+/* Ensure modal doesn't cause horizontal scroll */
+#project-modal {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+#project-modal .bg-gray-900 {
+  max-width: 95vw;
+  margin: 0 auto;
+}
+
+/* Fix for any potential overflow issues */
+* {
+  box-sizing: border-box;
+}
+
+/* Ensure main content doesn't overflow */
+body > * {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+img,
+video,
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure About section has no independent scroll */
+#about {
+  overflow: hidden !important;
+  max-width: 100vw !important;
+  width: 100% !important;
+}
+
+#about .container {
+  overflow: hidden !important;
+  max-width: 100% !important;
+}
+
+#about .flex {
+  overflow: hidden !important;
+  max-width: 100% !important;
+  align-items: center !important;
+}
+
+#about .grid {
+  overflow: hidden !important;
+  max-width: 100% !important;
+}
+
+/* Prevent any transform from causing overflow */
+#about * {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+#about .md\:w-2\/5 {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}

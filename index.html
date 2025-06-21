@@ -1,0 +1,3031 @@
+<!DOCTYPE html>
+<!-- saved from url=(0142)https://beeav3t4shxsa30k.canva-hosted-embed.com/codelet/AAEAEGJlZWF2M3Q0c2h4c2EzMGsAAAAAAZeVfUsdYCT1eLSLAoHylblQ5Iapre9hnR-%2D-NpMUrqR0c0oVcc/ -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Paul Calang | IT Portfolio</title>
+    <script src="./saved_resource"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+      :root {
+        --primary: #4f46e5;
+        --secondary: #7c3aed;
+        --accent: #10b981;
+        --dark: #111827;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: var(--dark);
+        color: #fff;
+        overflow-x: hidden;
+      }
+
+      .gradient-text {
+        background: linear-gradient(90deg, #4f46e5, #7c3aed, #10b981);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        background-size: 300% 300%;
+        animation: gradient 6s ease infinite;
+      }
+
+      .gradient-bg {
+        background: linear-gradient(90deg, #4f46e5, #7c3aed);
+        background-size: 200% 200%;
+        animation: gradient 6s ease infinite;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .blob {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(60px);
+        z-index: -1;
+        opacity: 0.4;
+      }
+
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+
+      .card-hover:hover {
+        transform: translateY(-10px);
+      }
+
+      .nav-link {
+        position: relative;
+      }
+
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -4px;
+        left: 0;
+        background: linear-gradient(90deg, #4f46e5, #7c3aed);
+        transition: width 0.3s ease;
+      }
+
+      .nav-link:hover::after {
+        width: 100%;
+      }
+
+      .typing-effect {
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 3px solid #4f46e5;
+        animation: typing 3.5s steps(40, end),
+          blink-caret 0.75s step-end infinite;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: #4f46e5;
+        }
+      }
+
+      .hexagon {
+        /* Removed hexagon clip-path to prevent interference with rounded-square */
+      }
+
+      .floating {
+        animation: floating 3s ease-in-out infinite;
+      }
+
+      @keyframes floating {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-15px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      .matrix-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+
+      /* Glassmorphism effect for navbar */
+      .glass-navbar {
+        background: rgba(31, 41, 55, 0.7);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+      }
+      /* Avatar style */
+      .navbar-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #4f46e5;
+        margin-right: 12px;
+        box-shadow: 0 2px 8px rgba(79, 70, 229, 0.2);
+      }
+      /* Hero animated gradient background */
+      .hero-animated-bg {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        background: linear-gradient(
+          120deg,
+          #4f46e5 0%,
+          #7c3aed 50%,
+          #10b981 100%
+        );
+        background-size: 200% 200%;
+        animation: heroGradientMove 8s ease-in-out infinite;
+        opacity: 0.5;
+      }
+      @keyframes heroGradientMove {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      /* Drop shadow for code window */
+      .code-window {
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25),
+          0 1.5px 8px 0 rgba(16, 185, 129, 0.08);
+      }
+      /* Typewriter effect for hero headline */
+      .typewriter {
+        overflow: hidden;
+        border-right: 0.15em solid #4f46e5;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: 0.05em;
+        animation: typing-hero 3.5s steps(40, end),
+          blink-caret-hero 0.75s step-end infinite;
+      }
+      @keyframes typing-hero {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+      @keyframes blink-caret-hero {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: #4f46e5;
+        }
+      }
+    </style>
+    <style>
+      *,
+      ::before,
+      ::after {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x: ;
+        --tw-pan-y: ;
+        --tw-pinch-zoom: ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-gradient-from-position: ;
+        --tw-gradient-via-position: ;
+        --tw-gradient-to-position: ;
+        --tw-ordinal: ;
+        --tw-slashed-zero: ;
+        --tw-numeric-figure: ;
+        --tw-numeric-spacing: ;
+        --tw-numeric-fraction: ;
+        --tw-ring-inset: ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgb(59 130 246 / 0.5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur: ;
+        --tw-brightness: ;
+        --tw-contrast: ;
+        --tw-grayscale: ;
+        --tw-hue-rotate: ;
+        --tw-invert: ;
+        --tw-saturate: ;
+        --tw-sepia: ;
+        --tw-drop-shadow: ;
+        --tw-backdrop-blur: ;
+        --tw-backdrop-brightness: ;
+        --tw-backdrop-contrast: ;
+        --tw-backdrop-grayscale: ;
+        --tw-backdrop-hue-rotate: ;
+        --tw-backdrop-invert: ;
+        --tw-backdrop-opacity: ;
+        --tw-backdrop-saturate: ;
+        --tw-backdrop-sepia: ;
+        --tw-contain-size: ;
+        --tw-contain-layout: ;
+        --tw-contain-paint: ;
+        --tw-contain-style: ;
+      }
+      ::backdrop {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x: ;
+        --tw-pan-y: ;
+        --tw-pinch-zoom: ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-gradient-from-position: ;
+        --tw-gradient-via-position: ;
+        --tw-gradient-to-position: ;
+        --tw-ordinal: ;
+        --tw-slashed-zero: ;
+        --tw-numeric-figure: ;
+        --tw-numeric-spacing: ;
+        --tw-numeric-fraction: ;
+        --tw-ring-inset: ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgb(59 130 246 / 0.5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur: ;
+        --tw-brightness: ;
+        --tw-contrast: ;
+        --tw-grayscale: ;
+        --tw-hue-rotate: ;
+        --tw-invert: ;
+        --tw-saturate: ;
+        --tw-sepia: ;
+        --tw-drop-shadow: ;
+        --tw-backdrop-blur: ;
+        --tw-backdrop-brightness: ;
+        --tw-backdrop-contrast: ;
+        --tw-backdrop-grayscale: ;
+        --tw-backdrop-hue-rotate: ;
+        --tw-backdrop-invert: ;
+        --tw-backdrop-opacity: ;
+        --tw-backdrop-saturate: ;
+        --tw-backdrop-sepia: ;
+        --tw-contain-size: ;
+        --tw-contain-layout: ;
+        --tw-contain-paint: ;
+        --tw-contain-style: ;
+      } /* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */
+      *,
+      ::after,
+      ::before {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        border-color: #e5e7eb;
+      }
+      ::after,
+      ::before {
+        --tw-content: "";
+      }
+      :host,
+      html {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        -moz-tab-size: 4;
+        tab-size: 4;
+        font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-feature-settings: normal;
+        font-variation-settings: normal;
+        -webkit-tap-highlight-color: transparent;
+      }
+      body {
+        margin: 0;
+        line-height: inherit;
+      }
+      hr {
+        height: 0;
+        color: inherit;
+        border-top-width: 1px;
+      }
+      abbr:where([title]) {
+        -webkit-text-decoration: underline dotted;
+        text-decoration: underline dotted;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: inherit;
+        font-weight: inherit;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      b,
+      strong {
+        font-weight: bolder;
+      }
+      code,
+      kbd,
+      pre,
+      samp {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", "Courier New", monospace;
+        font-feature-settings: normal;
+        font-variation-settings: normal;
+        font-size: 1em;
+      }
+      small {
+        font-size: 80%;
+      }
+      sub,
+      sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+      }
+      sub {
+        bottom: -0.25em;
+      }
+      sup {
+        top: -0.5em;
+      }
+      table {
+        text-indent: 0;
+        border-color: inherit;
+        border-collapse: collapse;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-feature-settings: inherit;
+        font-variation-settings: inherit;
+        font-size: 100%;
+        font-weight: inherit;
+        line-height: inherit;
+        letter-spacing: inherit;
+        color: inherit;
+        margin: 0;
+        padding: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      button,
+      input:where([type="button"]),
+      input:where([type="reset"]),
+      input:where([type="submit"]) {
+        -webkit-appearance: button;
+        background-color: transparent;
+        background-image: none;
+      }
+      :-moz-focusring {
+        outline: auto;
+      }
+      :-moz-ui-invalid {
+        box-shadow: none;
+      }
+      progress {
+        vertical-align: baseline;
+      }
+      ::-webkit-inner-spin-button,
+      ::-webkit-outer-spin-button {
+        height: auto;
+      }
+      [type="search"] {
+        -webkit-appearance: textfield;
+        outline-offset: -2px;
+      }
+      ::-webkit-search-decoration {
+        -webkit-appearance: none;
+      }
+      ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        font: inherit;
+      }
+      summary {
+        display: list-item;
+      }
+      blockquote,
+      dd,
+      dl,
+      figure,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      hr,
+      p,
+      pre {
+        margin: 0;
+      }
+      fieldset {
+        margin: 0;
+        padding: 0;
+      }
+      legend {
+        padding: 0;
+      }
+      menu,
+      ol,
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      dialog {
+        padding: 0;
+      }
+      textarea {
+        resize: vertical;
+      }
+      input::placeholder,
+      textarea::placeholder {
+        opacity: 1;
+        color: #9ca3af;
+      }
+      [role="button"],
+      button {
+        cursor: pointer;
+      }
+      :disabled {
+        cursor: default;
+      }
+      audio,
+      canvas,
+      embed,
+      iframe,
+      img,
+      object,
+      svg,
+      video {
+        display: block;
+        vertical-align: middle;
+      }
+      img,
+      video {
+        max-width: 100%;
+        height: auto;
+      }
+      [hidden]:where(:not([hidden="until-found"])) {
+        display: none;
+      }
+      .container {
+        width: 100%;
+      }
+      @media (min-width: 640px) {
+        .container {
+          max-width: 640px;
+        }
+      }
+      @media (min-width: 768px) {
+        .container {
+          max-width: 768px;
+        }
+      }
+      @media (min-width: 1024px) {
+        .container {
+          max-width: 1024px;
+        }
+      }
+      @media (min-width: 1280px) {
+        .container {
+          max-width: 1280px;
+        }
+      }
+      @media (min-width: 1536px) {
+        .container {
+          max-width: 1536px;
+        }
+      }
+      .visible {
+        visibility: visible;
+      }
+      .invisible {
+        visibility: hidden;
+      }
+      .fixed {
+        position: fixed;
+      }
+      .absolute {
+        position: absolute;
+      }
+      .relative {
+        position: relative;
+      }
+      .inset-0 {
+        inset: 0px;
+      }
+      .bottom-10 {
+        bottom: 2.5rem;
+      }
+      .bottom-8 {
+        bottom: 2rem;
+      }
+      .left-0 {
+        left: 0px;
+      }
+      .left-1\/2 {
+        left: 50%;
+      }
+      .right-0 {
+        right: 0px;
+      }
+      .right-4 {
+        right: 1rem;
+      }
+      .right-8 {
+        right: 2rem;
+      }
+      .top-0 {
+        top: 0px;
+      }
+      .top-24 {
+        top: 6rem;
+      }
+      .top-4 {
+        top: 1rem;
+      }
+      .z-0 {
+        z-index: 0;
+      }
+      .z-10 {
+        z-index: 10;
+      }
+      .z-50 {
+        z-index: 50;
+      }
+      .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .mb-1 {
+        margin-bottom: 0.25rem;
+      }
+      .mb-10 {
+        margin-bottom: 2.5rem;
+      }
+      .mb-12 {
+        margin-bottom: 3rem;
+      }
+      .mb-16 {
+        margin-bottom: 4rem;
+      }
+      .mb-2 {
+        margin-bottom: 0.5rem;
+      }
+      .mb-4 {
+        margin-bottom: 1rem;
+      }
+      .mb-6 {
+        margin-bottom: 1.5rem;
+      }
+      .mb-8 {
+        margin-bottom: 2rem;
+      }
+      .ml-1 {
+        margin-left: 0.25rem;
+      }
+      .ml-2 {
+        margin-left: 0.5rem;
+      }
+      .ml-4 {
+        margin-left: 1rem;
+      }
+      .mr-2 {
+        margin-right: 0.5rem;
+      }
+      .mr-4 {
+        margin-right: 1rem;
+      }
+      .mt-12 {
+        margin-top: 3rem;
+      }
+      .mt-16 {
+        margin-top: 4rem;
+      }
+      .mt-2 {
+        margin-top: 0.5rem;
+      }
+      .mt-4 {
+        margin-top: 1rem;
+      }
+      .mt-8 {
+        margin-top: 2rem;
+      }
+      .block {
+        display: block;
+      }
+      .inline-block {
+        display: inline-block;
+      }
+      .flex {
+        display: flex;
+      }
+      .inline-flex {
+        display: inline-flex;
+      }
+      .grid {
+        display: grid;
+      }
+      .hidden {
+        display: none;
+      }
+      .h-1 {
+        height: 0.25rem;
+      }
+      .h-10 {
+        height: 2.5rem;
+      }
+      .h-12 {
+        height: 3rem;
+      }
+      .h-16 {
+        height: 4rem;
+      }
+      .h-2 {
+        height: 0.5rem;
+      }
+      .h-3 {
+        height: 0.75rem;
+      }
+      .h-32 {
+        height: 8rem;
+      }
+      .h-5 {
+        height: 1.25rem;
+      }
+      .h-56 {
+        height: 14rem;
+      }
+      .h-6 {
+        height: 1.5rem;
+      }
+      .h-full {
+        height: 100%;
+      }
+      .max-h-\[90vh\] {
+        max-height: 90vh;
+      }
+      .min-h-screen {
+        min-height: 100vh;
+      }
+      .w-10 {
+        width: 2.5rem;
+      }
+      .w-12 {
+        width: 3rem;
+      }
+      .w-16 {
+        width: 4rem;
+      }
+      .w-24 {
+        width: 6rem;
+      }
+      .w-3 {
+        width: 0.75rem;
+      }
+      .w-32 {
+        width: 8rem;
+      }
+      .w-5 {
+        width: 1.25rem;
+      }
+      .w-6 {
+        width: 1.5rem;
+      }
+      .w-full {
+        width: 100%;
+      }
+      .max-w-2xl {
+        max-width: 42rem;
+      }
+      .max-w-4xl {
+        max-width: 56rem;
+      }
+      .max-w-lg {
+        max-width: 32rem;
+      }
+      .flex-shrink-0 {
+        flex-shrink: 0;
+      }
+      .-translate-x-1\/2 {
+        --tw-translate-x: -50%;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+      .-translate-y-16 {
+        --tw-translate-y: -4rem;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+      .translate-x-16 {
+        --tw-translate-x: 4rem;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+      .translate-x-full {
+        --tw-translate-x: 100%;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+      .rotate-6 {
+        --tw-rotate: 6deg;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+      .scale-105 {
+        --tw-scale-x: 1.05;
+        --tw-scale-y: 1.05;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+      .transform {
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(-25%);
+          animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        }
+        50% {
+          transform: none;
+          animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        }
+      }
+      .animate-bounce {
+        animation: bounce 1s infinite;
+      }
+      .resize-none {
+        resize: none;
+      }
+      .grid-cols-1 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
+      .grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .flex-col {
+        flex-direction: column;
+      }
+      .flex-wrap {
+        flex-wrap: wrap;
+      }
+      .items-start {
+        align-items: flex-start;
+      }
+      .items-center {
+        align-items: center;
+      }
+      .justify-center {
+        justify-content: center;
+      }
+      .justify-between {
+        justify-content: space-between;
+      }
+      .gap-2 {
+        gap: 0.5rem;
+      }
+      .gap-4 {
+        gap: 1rem;
+      }
+      .gap-6 {
+        gap: 1.5rem;
+      }
+      .gap-8 {
+        gap: 2rem;
+      }
+      .-space-x-2 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(-0.5rem * var(--tw-space-x-reverse));
+        margin-left: calc(-0.5rem * calc(1 - var(--tw-space-x-reverse)));
+      }
+      .space-x-4 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(1rem * var(--tw-space-x-reverse));
+        margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+      }
+      .space-x-8 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(2rem * var(--tw-space-x-reverse));
+        margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+      }
+      .space-y-2 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-y-reverse: 0;
+        margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+        margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+      }
+      .space-y-4 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-y-reverse: 0;
+        margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+        margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+      }
+      .space-y-6 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-y-reverse: 0;
+        margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+        margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+      }
+      .overflow-hidden {
+        overflow: hidden;
+      }
+      .overflow-y-auto {
+        overflow-y: auto;
+      }
+      .rounded-2xl {
+        border-radius: 1rem;
+      }
+      .rounded-full {
+        border-radius: 9999px;
+      }
+      .rounded-lg {
+        border-radius: 0.5rem;
+      }
+      .rounded-xl {
+        border-radius: 0.75rem;
+      }
+      .border {
+        border-width: 1px;
+      }
+      .border-2 {
+        border-width: 2px;
+      }
+      .border-b {
+        border-bottom-width: 1px;
+      }
+      .border-t {
+        border-top-width: 1px;
+      }
+      .border-gray-600 {
+        --tw-border-opacity: 1;
+        border-color: rgb(75 85 99 / var(--tw-border-opacity, 1));
+      }
+      .border-gray-700 {
+        --tw-border-opacity: 1;
+        border-color: rgb(55 65 81 / var(--tw-border-opacity, 1));
+      }
+      .border-gray-800 {
+        --tw-border-opacity: 1;
+        border-color: rgb(31 41 55 / var(--tw-border-opacity, 1));
+      }
+      .border-indigo-500 {
+        --tw-border-opacity: 1;
+        border-color: rgb(99 102 241 / var(--tw-border-opacity, 1));
+      }
+      .bg-black {
+        --tw-bg-opacity: 1;
+        background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+      }
+      .bg-blue-500 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
+      }
+      .bg-blue-900 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(30 58 138 / var(--tw-bg-opacity, 1));
+      }
+      .bg-emerald-600 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(5 150 105 / var(--tw-bg-opacity, 1));
+      }
+      .bg-gray-700 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(55 65 81 / var(--tw-bg-opacity, 1));
+      }
+      .bg-gray-800 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
+      }
+      .bg-gray-900 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
+      }
+      .bg-green-500 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(34 197 94 / var(--tw-bg-opacity, 1));
+      }
+      .bg-green-900 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(20 83 45 / var(--tw-bg-opacity, 1));
+      }
+      .bg-indigo-500 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(99 102 241 / var(--tw-bg-opacity, 1));
+      }
+      .bg-indigo-600 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(79 70 229 / var(--tw-bg-opacity, 1));
+      }
+      .bg-indigo-900 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(49 46 129 / var(--tw-bg-opacity, 1));
+      }
+      .bg-purple-500 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(168 85 247 / var(--tw-bg-opacity, 1));
+      }
+      .bg-purple-600 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(147 51 234 / var(--tw-bg-opacity, 1));
+      }
+      .bg-purple-900 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(88 28 135 / var(--tw-bg-opacity, 1));
+      }
+      .bg-red-500 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(239 68 68 / var(--tw-bg-opacity, 1));
+      }
+      .bg-red-900 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(127 29 29 / var(--tw-bg-opacity, 1));
+      }
+      .bg-transparent {
+        background-color: transparent;
+      }
+      .bg-white {
+        --tw-bg-opacity: 1;
+        background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+      }
+      .bg-yellow-500 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(234 179 8 / var(--tw-bg-opacity, 1));
+      }
+      .bg-yellow-900 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(113 63 18 / var(--tw-bg-opacity, 1));
+      }
+      .bg-opacity-10 {
+        --tw-bg-opacity: 0.1;
+      }
+      .bg-opacity-20 {
+        --tw-bg-opacity: 0.2;
+      }
+      .bg-opacity-30 {
+        --tw-bg-opacity: 0.3;
+      }
+      .bg-opacity-50 {
+        --tw-bg-opacity: 0.5;
+      }
+      .bg-opacity-70 {
+        --tw-bg-opacity: 0.7;
+      }
+      .bg-opacity-80 {
+        --tw-bg-opacity: 0.8;
+      }
+      .bg-opacity-95 {
+        --tw-bg-opacity: 0.95;
+      }
+      .bg-gradient-to-br {
+        background-image: linear-gradient(
+          to bottom right,
+          var(--tw-gradient-stops)
+        );
+      }
+      .bg-gradient-to-r {
+        background-image: linear-gradient(to right, var(--tw-gradient-stops));
+      }
+      .from-blue-600 {
+        --tw-gradient-from: #2563eb var(--tw-gradient-from-position);
+        --tw-gradient-to: rgb(37 99 235 / 0) var(--tw-gradient-to-position);
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+      }
+      .from-green-500 {
+        --tw-gradient-from: #22c55e var(--tw-gradient-from-position);
+        --tw-gradient-to: rgb(34 197 94 / 0) var(--tw-gradient-to-position);
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+      }
+      .from-green-600 {
+        --tw-gradient-from: #16a34a var(--tw-gradient-from-position);
+        --tw-gradient-to: rgb(22 163 74 / 0) var(--tw-gradient-to-position);
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+      }
+      .from-indigo-500 {
+        --tw-gradient-from: #6366f1 var(--tw-gradient-from-position);
+        --tw-gradient-to: rgb(99 102 241 / 0) var(--tw-gradient-to-position);
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+      }
+      .from-purple-500 {
+        --tw-gradient-from: #a855f7 var(--tw-gradient-from-position);
+        --tw-gradient-to: rgb(168 85 247 / 0) var(--tw-gradient-to-position);
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+      }
+      .from-purple-600 {
+        --tw-gradient-from: #9333ea var(--tw-gradient-from-position);
+        --tw-gradient-to: rgb(147 51 234 / 0) var(--tw-gradient-to-position);
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+      }
+      .to-blue-400 {
+        --tw-gradient-to: #60a5fa var(--tw-gradient-to-position);
+      }
+      .to-blue-800 {
+        --tw-gradient-to: #1e40af var(--tw-gradient-to-position);
+      }
+      .to-green-400 {
+        --tw-gradient-to: #4ade80 var(--tw-gradient-to-position);
+      }
+      .to-green-800 {
+        --tw-gradient-to: #166534 var(--tw-gradient-to-position);
+      }
+      .to-purple-400 {
+        --tw-gradient-to: #c084fc var(--tw-gradient-to-position);
+      }
+      .to-purple-500 {
+        --tw-gradient-to: #a855f7 var(--tw-gradient-to-position);
+      }
+      .to-purple-800 {
+        --tw-gradient-to: #6b21a8 var(--tw-gradient-to-position);
+      }
+      .p-1 {
+        padding: 0.25rem;
+      }
+      .p-4 {
+        padding: 1rem;
+      }
+      .p-6 {
+        padding: 1.5rem;
+      }
+      .p-8 {
+        padding: 2rem;
+      }
+      .px-3 {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+      }
+      .px-4 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .px-6 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+      .px-8 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+      .py-1 {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+      }
+      .py-12 {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+      .py-2 {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+      .py-24 {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+      }
+      .py-3 {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+      }
+      .py-4 {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      .pl-12 {
+        padding-left: 3rem;
+      }
+      .pl-4 {
+        padding-left: 1rem;
+      }
+      .pl-8 {
+        padding-left: 2rem;
+      }
+      .pt-20 {
+        padding-top: 5rem;
+      }
+      .pt-8 {
+        padding-top: 2rem;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .font-mono {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", "Courier New", monospace;
+      }
+      .text-2xl {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+      .text-3xl {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+      }
+      .text-4xl {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+      }
+      .text-5xl {
+        font-size: 3rem;
+        line-height: 1;
+      }
+      .text-lg {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+      }
+      .text-sm {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+      }
+      .text-xl {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+      }
+      .text-xs {
+        font-size: 0.75rem;
+        line-height: 1rem;
+      }
+      .font-bold {
+        font-weight: 700;
+      }
+      .font-medium {
+        font-weight: 500;
+      }
+      .font-semibold {
+        font-weight: 600;
+      }
+      .leading-relaxed {
+        line-height: 1.625;
+      }
+      .leading-tight {
+        line-height: 1.25;
+      }
+      .text-blue-400 {
+        --tw-text-opacity: 1;
+        color: rgb(96 165 250 / var(--tw-text-opacity, 1));
+      }
+      .text-blue-500 {
+        --tw-text-opacity: 1;
+        color: rgb(59 130 246 / var(--tw-text-opacity, 1));
+      }
+      .text-gray-300 {
+        --tw-text-opacity: 1;
+        color: rgb(209 213 219 / var(--tw-text-opacity, 1));
+      }
+      .text-gray-400 {
+        --tw-text-opacity: 1;
+        color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+      }
+      .text-gray-500 {
+        --tw-text-opacity: 1;
+        color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+      }
+      .text-green-400 {
+        --tw-text-opacity: 1;
+        color: rgb(74 222 128 / var(--tw-text-opacity, 1));
+      }
+      .text-indigo-300 {
+        --tw-text-opacity: 1;
+        color: rgb(165 180 252 / var(--tw-text-opacity, 1));
+      }
+      .text-indigo-400 {
+        --tw-text-opacity: 1;
+        color: rgb(129 140 248 / var(--tw-text-opacity, 1));
+      }
+      .text-indigo-600 {
+        --tw-text-opacity: 1;
+        color: rgb(79 70 229 / var(--tw-text-opacity, 1));
+      }
+      .text-orange-400 {
+        --tw-text-opacity: 1;
+        color: rgb(251 146 60 / var(--tw-text-opacity, 1));
+      }
+      .text-purple-400 {
+        --tw-text-opacity: 1;
+        color: rgb(192 132 252 / var(--tw-text-opacity, 1));
+      }
+      .text-red-400 {
+        --tw-text-opacity: 1;
+        color: rgb(248 113 113 / var(--tw-text-opacity, 1));
+      }
+      .text-white {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+      }
+      .text-yellow-400 {
+        --tw-text-opacity: 1;
+        color: rgb(250 204 21 / var(--tw-text-opacity, 1));
+      }
+      .text-yellow-500 {
+        --tw-text-opacity: 1;
+        color: rgb(234 179 8 / var(--tw-text-opacity, 1));
+      }
+      .opacity-0 {
+        opacity: 0;
+      }
+      .opacity-30 {
+        opacity: 0.3;
+      }
+      .opacity-90 {
+        opacity: 0.9;
+      }
+      .opacity-100 {
+        opacity: 1;
+      }
+      .shadow-lg {
+        --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+          0 4px 6px -4px rgb(0 0 0 / 0.1);
+        --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),
+          0 4px 6px -4px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      }
+      .shadow-xl {
+        --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+          0 8px 10px -6px rgb(0 0 0 / 0.1);
+        --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
+          0 8px 10px -6px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      }
+      .blur-xl {
+        --tw-blur: blur(24px);
+        filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+          var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert)
+          var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+      }
+      .backdrop-blur-md {
+        --tw-backdrop-blur: blur(12px);
+        -webkit-backdrop-filter: var(--tw-backdrop-blur)
+          var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)
+          var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate)
+          var(--tw-backdrop-invert) var(--tw-backdrop-opacity)
+          var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+        backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness)
+          var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale)
+          var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)
+          var(--tw-backdrop-opacity) var(--tw-backdrop-saturate)
+          var(--tw-backdrop-sepia);
+      }
+      .transition {
+        transition-property: color, background-color, border-color, fill, stroke,
+          opacity, box-shadow, transform, filter, -webkit-text-decoration-color,
+          -webkit-backdrop-filter;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+          filter, backdrop-filter;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+          filter, backdrop-filter, -webkit-text-decoration-color,
+          -webkit-backdrop-filter;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+      }
+      .transition-all {
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+      }
+      .transition-colors {
+        transition-property: color, background-color, border-color, fill, stroke,
+          -webkit-text-decoration-color;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke, -webkit-text-decoration-color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+      }
+      .transition-opacity {
+        transition-property: opacity;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+      }
+      .transition-transform {
+        transition-property: transform;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+      }
+      .duration-300 {
+        transition-duration: 300ms;
+      }
+      .hover\:-translate-y-1:hover {
+        --tw-translate-y: -0.25rem;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+      .hover\:border-indigo-500:hover {
+        --tw-border-opacity: 1;
+        border-color: rgb(99 102 241 / var(--tw-border-opacity, 1));
+      }
+      .hover\:bg-indigo-500:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(99 102 241 / var(--tw-bg-opacity, 1));
+      }
+      .hover\:bg-indigo-500\/10:hover {
+        background-color: rgb(99 102 241 / 0.1);
+      }
+      .hover\:bg-indigo-600:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(79 70 229 / var(--tw-bg-opacity, 1));
+      }
+      .hover\:bg-opacity-20:hover {
+        --tw-bg-opacity: 0.2;
+      }
+      .hover\:text-white:hover {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+      }
+      .hover\:opacity-100:hover {
+        opacity: 1;
+      }
+      .hover\:shadow-lg:hover {
+        --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+          0 4px 6px -4px rgb(0 0 0 / 0.1);
+        --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),
+          0 4px 6px -4px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      }
+      .hover\:shadow-indigo-500\/30:hover {
+        --tw-shadow-color: rgb(99 102 241 / 0.3);
+        --tw-shadow: var(--tw-shadow-colored);
+      }
+      .focus\:border-indigo-500:focus {
+        --tw-border-opacity: 1;
+        border-color: rgb(99 102 241 / var(--tw-border-opacity, 1));
+      }
+      .focus\:outline-none:focus {
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+      }
+      @media (min-width: 768px) {
+        .md\:mb-0 {
+          margin-bottom: 0px;
+        }
+        .md\:flex {
+          display: flex;
+        }
+        .md\:hidden {
+          display: none;
+        }
+        .md\:w-1\/2 {
+          width: 50%;
+        }
+        .md\:w-2\/5 {
+          width: 40%;
+        }
+        .md\:w-3\/5 {
+          width: 60%;
+        }
+        .md\:grid-cols-2 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .md\:grid-cols-3 {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+        .md\:flex-row {
+          flex-direction: row;
+        }
+        .md\:pl-12 {
+          padding-left: 3rem;
+        }
+        .md\:text-6xl {
+          font-size: 3.75rem;
+          line-height: 1;
+        }
+      }
+      @media (min-width: 1024px) {
+        .lg\:grid-cols-3 {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+        .lg\:grid-cols-6 {
+          grid-template-columns: repeat(6, minmax(0, 1fr));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Blobs -->
+    <div
+      class="blob bg-indigo-600"
+      style="width: 500px; height: 500px; top: 20%; left: 10%"
+    ></div>
+    <div
+      class="blob bg-purple-600"
+      style="width: 400px; height: 400px; top: 60%; right: 5%"
+    ></div>
+    <div
+      class="blob bg-emerald-600"
+      style="width: 300px; height: 300px; top: 80%; left: 20%"
+    ></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full glass-navbar z-50 border-b border-gray-800">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <a href="#" class="text-2xl font-bold flex items-center">
+            <span class="text-white">&lt;</span>
+            <span class="gradient-text">Paul</span>
+            <span class="text-white">/&gt;</span>
+          </a>
+
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="#about"
+              class="nav-link text-gray-300 hover:text-white transition"
+              >About</a
+            >
+            <a
+              href="#skills"
+              class="nav-link text-gray-300 hover:text-white transition"
+              >Skills</a
+            >
+            <a
+              href="#projects"
+              class="nav-link text-gray-300 hover:text-white transition"
+              >Projects</a
+            >
+            <a
+              href="#services"
+              class="nav-link text-gray-300 hover:text-white transition"
+              >Services</a
+            >
+            <a
+              href="#contact"
+              class="nav-link text-gray-300 hover:text-white transition"
+              >Contact</a
+            >
+          </div>
+
+          <button
+            id="mobile-menu-button"
+            class="md:hidden text-gray-300 hover:text-white"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-gray-900 bg-opacity-95 backdrop-blur-md border-b border-gray-800"
+      >
+        <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+          <a
+            href="#about"
+            class="text-gray-300 hover:text-white transition py-2"
+            >About</a
+          >
+          <a
+            href="#skills"
+            class="text-gray-300 hover:text-white transition py-2"
+            >Skills</a
+          >
+          <a
+            href="#projects"
+            class="text-gray-300 hover:text-white transition py-2"
+            >Projects</a
+          >
+          <a
+            href="#services"
+            class="text-gray-300 hover:text-white transition py-2"
+            >Services</a
+          >
+          <a
+            href="#contact"
+            class="text-gray-300 hover:text-white transition py-2"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header
+      class="relative min-h-screen flex items-center pt-20 overflow-hidden"
+    >
+      <div class="hero-animated-bg"></div>
+      <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-gray-900 opacity-90"></div>
+        <canvas
+          id="matrix-canvas"
+          class="matrix-bg"
+          width="1366"
+          height="768"
+        ></canvas>
+      </div>
+
+      <div class="container mx-auto px-6 z-10">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-12 md:mb-0">
+            <div class="mb-4 inline-block">
+              <span
+                class="bg-indigo-900 bg-opacity-50 text-indigo-300 px-4 py-1 rounded-full text-sm font-medium"
+                >BSIT Student</span
+              >
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              <span class="block">Helping Fellow</span>
+              <span class="gradient-text typewriter">IT Students Succeed</span>
+            </h1>
+
+            <p class="text-xl mb-8 text-gray-300 max-w-lg">
+              Support with code, documentation, and academic systems. Turning
+              complex IT challenges into successful projects.
+            </p>
+
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="#contact"
+                class="gradient-bg text-white font-medium py-3 px-8 rounded-lg transition duration-300 inline-block hover:shadow-lg hover:shadow-indigo-500/30 transform hover:-translate-y-1"
+              >
+                Get in Touch
+              </a>
+              <a
+                href="#projects"
+                class="bg-transparent border-2 border-gray-600 hover:border-indigo-500 text-white font-medium py-3 px-8 rounded-lg transition duration-300 inline-block hover:bg-indigo-500/10"
+              >
+                View Projects
+              </a>
+            </div>
+
+            <div class="mt-12 flex items-center">
+              <div class="flex -space-x-2">
+                <div
+                  class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white text-xs font-bold"
+                >
+                  LA
+                </div>
+                <div
+                  class="w-10 h-10 rounded-full bg-purple-500 flex items-center justify-center text-white text-xs font-bold"
+                >
+                  AB
+                </div>
+                <div
+                  class="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center text-white text-xs font-bold"
+                >
+                  LI
+                </div>
+              </div>
+              <div class="ml-4">
+                <p class="text-sm text-gray-400">
+                  Trusted by
+                  <span class="text-white font-medium">50+</span> students
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:w-1/2 flex justify-center">
+            <div
+              class="code-window w-full max-w-lg bg-gray-800 rounded-lg overflow-hidden border border-gray-700"
+            >
+              <div class="bg-gray-900 px-4 py-2 flex items-center">
+                <div class="w-3 h-3 bg-red-500 rounded-full mr-2"></div>
+                <div class="w-3 h-3 bg-yellow-500 rounded-full mr-2"></div>
+                <div class="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
+                <div class="ml-2 text-xs text-gray-400">paul_calang.js</div>
+              </div>
+              <div class="p-6 font-mono text-sm">
+                <div class="text-blue-400">
+                  class <span class="text-green-400">PaulCalang</span> {
+                </div>
+                <div class="pl-4 text-blue-400">constructor() {</div>
+                <div class="pl-8">
+                  <span class="text-purple-400">this</span>.<span
+                    class="text-green-400"
+                    >name</span
+                  >
+                  = <span class="text-orange-400">"Paul Calang"</span>;
+                </div>
+                <div class="pl-8">
+                  <span class="text-purple-400">this</span>.<span
+                    class="text-green-400"
+                    >degree</span
+                  >
+                  = <span class="text-orange-400">"BSIT Graduate"</span>;
+                </div>
+                <div class="pl-8">
+                  <span class="text-purple-400">this</span>.<span
+                    class="text-green-400"
+                    >skills</span
+                  >
+                  = [<span class="text-orange-400">"PHP"</span>,
+                  <span class="text-orange-400">"JavaScript"</span>,
+                  <span class="text-orange-400">"VB.NET"</span>,
+                </div>
+                <div class="pl-12">
+                  <span class="text-orange-400">"MySQL"</span>,
+                  <span class="text-orange-400">"HTML"</span>,
+                  <span class="text-orange-400">"CSS"</span>];
+                </div>
+                <div class="pl-8">
+                  <span class="text-purple-400">this</span>.<span
+                    class="text-green-400"
+                    >mission</span
+                  >
+                  =
+                  <span class="text-orange-400"
+                    >"Helping IT Students Succeed"</span
+                  >;
+                </div>
+                <div class="pl-4">}</div>
+                <div class="mt-2 pl-4 text-yellow-400">
+                  createSolution(<span class="text-purple-400">problem</span>) {
+                </div>
+                <div class="pl-8 text-blue-400">
+                  return <span class="text-blue-400">new</span>
+                  <span class="text-green-400">Solution</span>(<span
+                    class="text-purple-400"
+                    >problem</span
+                  >);
+                </div>
+                <div class="pl-4">}</div>
+                <div class="mt-2 pl-4 text-yellow-400">
+                  helpStudent(<span class="text-purple-400">student</span>) {
+                </div>
+                <div class="pl-8 text-gray-500">
+                  // Ready to assist with your project
+                </div>
+                <div class="pl-8 text-blue-400">
+                  const <span class="text-purple-400">success</span> =
+                  <span class="text-purple-400">student</span>.<span
+                    class="text-yellow-400"
+                    >learn</span
+                  >(<span class="text-purple-400">this</span>.<span
+                    class="text-green-400"
+                    >skills</span
+                  >);
+                </div>
+                <div class="pl-8 text-blue-400">
+                  return <span class="text-purple-400">success</span>;
+                </div>
+                <div class="pl-4">}</div>
+                <div>}</div>
+                <div class="mt-2 text-blue-400">
+                  const <span class="text-purple-400">paul</span> =
+                  <span class="text-blue-400">new</span>
+                  <span class="text-green-400">PaulCalang</span>();
+                </div>
+                <div>
+                  <span class="text-purple-400">paul</span>.<span
+                    class="text-yellow-400"
+                    >helpStudent</span
+                  >(<span class="text-purple-400">you</span>);
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="scroll-explore-indicator absolute left-1/2 bottom-10 transform -translate-x-1/2 text-center w-full flex flex-col items-center justify-center"
+        >
+          <p class="text-gray-400 mb-2">Scroll to explore</p>
+          <div class="animate-bounce">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 text-gray-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 14l-7 7m0 0l-7-7m7 7V3"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-gray-900 relative">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold mb-2">
+            About <span class="gradient-text">Me</span>
+          </h2>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto"
+          ></div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <div class="md:w-2/5 mb-10 md:mb-0 flex justify-center">
+            <div class="relative">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-square transform rotate-6 scale-105 opacity-30 blur-xl"
+              ></div>
+              <div
+                class="rounded-square bg-gradient-to-br from-indigo-500 to-purple-500 p-1 relative"
+              >
+                <div class="rounded-square bg-gray-900 p-4 h-full">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-full h-full text-gray-300"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:w-3/5 md:pl-12 md:pr-12">
+            <h3 class="text-3xl font-bold gradient-text mb-6">Paul Calang</h3>
+            <p class="text-gray-300 mb-6 text-lg leading-relaxed">
+              I am a passionate 3rd-year BSIT student with a strong foundation
+              in various programming languages and technologies, including web
+              development, database management, and system design. Throughout my
+              academic journey, I've gained hands-on experience in developing
+              functional and user-friendly systems that address real-world
+              problems. I'm always eager to learn new tools and improve my
+              skills, whether through class projects, personal coding
+              challenges, or collaborative work. Beyond my own growth, I find
+              genuine joy in supporting fellow IT students—whether it's guiding
+              them through difficult concepts, helping with their projects, or
+              sharing resources to help them succeed.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div
+                class="bg-gray-800 bg-opacity-50 p-4 rounded-lg border border-gray-700"
+              >
+                <h4 class="font-semibold text-indigo-400 mb-2">Education</h4>
+                <p class="text-gray-300">
+                  Bachelor of Science in Information Technology
+                </p>
+              </div>
+              <div
+                class="bg-gray-800 bg-opacity-50 p-4 rounded-lg border border-gray-700"
+              >
+                <h4 class="font-semibold text-indigo-400 mb-2">Location</h4>
+                <p class="text-gray-300">Surigao City, Philippines</p>
+              </div>
+            </div>
+
+            <div class="flex space-x-4">
+              <a
+                href="https://github.com/PooruDev"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-indigo-500 transition duration-300"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/paulcalang-dev"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-indigo-500 transition duration-300"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/paul.calang.2024"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-indigo-500 transition duration-300"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stacks Section -->
+    <section id="skills" class="py-24 bg-gray-800 relative">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold mb-2">
+            My <span class="gradient-text">Tech Stacks</span>
+          </h2>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto"
+          ></div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          <div
+            class="card-hover bg-gray-900 p-6 rounded-xl border border-gray-700 flex flex-col items-center"
+          >
+            <div
+              class="w-16 h-16 bg-blue-900 bg-opacity-30 rounded-lg flex items-center justify-center mb-4"
+            >
+              <i class="fab fa-php text-blue-400 text-3xl"></i>
+            </div>
+            <h3 class="text-lg font-medium text-white">PHP</h3>
+            <div class="mt-4 w-full bg-gray-700 rounded-full h-2">
+              <div
+                class="bg-blue-500 h-2 rounded-full"
+                style="width: 90%"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            class="card-hover bg-gray-900 p-6 rounded-xl border border-gray-700 flex flex-col items-center"
+          >
+            <div
+              class="w-16 h-16 bg-yellow-900 bg-opacity-30 rounded-lg flex items-center justify-center mb-4"
+            >
+              <i class="fab fa-js text-yellow-400 text-3xl"></i>
+            </div>
+            <h3 class="text-lg font-medium text-white">JavaScript</h3>
+            <div class="mt-4 w-full bg-gray-700 rounded-full h-2">
+              <div
+                class="bg-yellow-500 h-2 rounded-full"
+                style="width: 85%"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            class="card-hover bg-gray-900 p-6 rounded-xl border border-gray-700 flex flex-col items-center"
+          >
+            <div
+              class="w-16 h-16 bg-indigo-900 bg-opacity-30 rounded-lg flex items-center justify-center mb-4"
+            >
+              <i class="fab fa-microsoft text-indigo-400 text-3xl"></i>
+            </div>
+            <h3 class="text-lg font-medium text-white">VB.NET</h3>
+            <div class="mt-4 w-full bg-gray-700 rounded-full h-2">
+              <div
+                class="bg-indigo-500 h-2 rounded-full"
+                style="width: 80%"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            class="card-hover bg-gray-900 p-6 rounded-xl border border-gray-700 flex flex-col items-center"
+          >
+            <div
+              class="w-16 h-16 bg-green-900 bg-opacity-30 rounded-lg flex items-center justify-center mb-4"
+            >
+              <i class="fas fa-database text-green-400 text-3xl"></i>
+            </div>
+            <h3 class="text-lg font-medium text-white">MySQL</h3>
+            <div class="mt-4 w-full bg-gray-700 rounded-full h-2">
+              <div
+                class="bg-green-500 h-2 rounded-full"
+                style="width: 85%"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            class="card-hover bg-gray-900 p-6 rounded-xl border border-gray-700 flex flex-col items-center"
+          >
+            <div
+              class="w-16 h-16 bg-red-900 bg-opacity-30 rounded-lg flex items-center justify-center mb-4"
+            >
+              <i class="fab fa-html5 text-red-400 text-3xl"></i>
+            </div>
+            <h3 class="text-lg font-medium text-white">HTML</h3>
+            <div class="mt-4 w-full bg-gray-700 rounded-full h-2">
+              <div class="bg-red-500 h-2 rounded-full" style="width: 95%"></div>
+            </div>
+          </div>
+
+          <div
+            class="card-hover bg-gray-900 p-6 rounded-xl border border-gray-700 flex flex-col items-center"
+          >
+            <div
+              class="w-16 h-16 bg-purple-900 bg-opacity-30 rounded-lg flex items-center justify-center mb-4"
+            >
+              <i class="fab fa-css3-alt text-purple-400 text-3xl"></i>
+            </div>
+            <h3 class="text-lg font-medium text-white">CSS</h3>
+            <div class="mt-4 w-full bg-gray-700 rounded-full h-2">
+              <div
+                class="bg-purple-500 h-2 rounded-full"
+                style="width: 90%"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-16">
+          <h3 class="text-xl font-bold mb-6 text-center">Key Achievements</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div
+              class="card-hover bg-gray-900 rounded-xl shadow-xl p-8 border border-gray-700 relative overflow-hidden"
+            >
+              <div
+                class="absolute top-0 right-0 w-32 h-32 bg-indigo-500 bg-opacity-10 rounded-full transform translate-x-16 -translate-y-16"
+              ></div>
+
+              <div
+                class="w-16 h-16 bg-indigo-900 bg-opacity-20 rounded-xl flex items-center justify-center mb-6 relative z-10"
+              >
+                <i class="fas fa-shield-alt text-indigo-400 text-2xl"></i>
+              </div>
+
+              <h3 class="text-xl font-bold mb-4 relative z-10">
+                TriProtect Emergency System
+              </h3>
+
+              <p class="text-gray-400 mb-6 relative z-10">
+                Developed an innovative emergency response system that received
+                recognition for its effectiveness.
+              </p>
+
+              <div
+                class="flex items-center text-sm text-gray-500 relative z-10"
+              >
+                <i class="fas fa-trophy mr-2 text-yellow-500"></i>
+                <span>Best Innovation Award</span>
+              </div>
+            </div>
+            <!--  
+            <div
+              class="card-hover bg-gray-900 rounded-xl shadow-xl p-8 border border-gray-700 relative overflow-hidden"
+            >
+              <div
+                class="absolute top-0 right-0 w-32 h-32 bg-purple-500 bg-opacity-10 rounded-full transform translate-x-16 -translate-y-16"
+              ></div>
+
+              <div
+                class="w-16 h-16 bg-purple-900 bg-opacity-20 rounded-xl flex items-center justify-center mb-6 relative z-10"
+              >
+                <i class="fas fa-users text-purple-400 text-2xl"></i>
+              </div>
+
+              <h3 class="text-xl font-bold mb-4 relative z-10">
+                IT Club President
+              </h3>
+
+              <p class="text-gray-400 mb-6 relative z-10">
+                Led the university's IT Club, organizing workshops, hackathons,
+                and tech talks.
+              </p>
+
+              <div
+                class="flex items-center text-sm text-gray-500 relative z-10"
+              >
+                <i class="fas fa-calendar mr-2 text-blue-500"></i>
+                <span>2021 - 2022</span>
+              </div>
+            </div>
+            -->
+            <div
+              class="card-hover bg-gray-900 rounded-xl shadow-xl p-8 border border-gray-700 relative overflow-hidden"
+            >
+              <div
+                class="absolute top-0 right-0 w-32 h-32 bg-green-500 bg-opacity-10 rounded-full transform translate-x-16 -translate-y-16"
+              ></div>
+
+              <div
+                class="w-16 h-16 bg-green-900 bg-opacity-20 rounded-xl flex items-center justify-center mb-6 relative z-10"
+              >
+                <i class="fas fa-award text-green-400 text-2xl"></i>
+              </div>
+
+              <h3 class="text-xl font-bold mb-4 relative z-10">
+                Academic Excellence
+              </h3>
+
+              <p class="text-gray-400 mb-6 relative z-10">
+                Achieved the top rank among Dean's Listers during my 2nd year in
+                college, demonstrating consistent academic excellence and
+                dedication to my studies.
+              </p>
+
+              <div
+                class="flex items-center text-sm text-gray-500 relative z-10"
+              >
+                <i class="fas fa-star mr-2 text-yellow-500"></i>
+                <span class="mr-4">Dean's Lister</span>
+                <i class="fas fa-calendar mr-2 text-blue-500"></i>
+                <span>2024 - 2025</span>
+              </div>
+            </div>
+            <div
+              class="card-hover bg-gray-900 rounded-xl shadow-xl p-8 border border-gray-700 relative overflow-hidden"
+            >
+              <div
+                class="absolute top-0 right-0 w-32 h-32 bg-green-500 bg-opacity-10 rounded-full transform translate-x-16 -translate-y-16"
+              ></div>
+
+              <div
+                class="w-16 h-16 bg-green-900 bg-opacity-20 rounded-xl flex items-center justify-center mb-6 relative z-10"
+              >
+                <i class="fas fa-award text-green-400 text-2xl"></i>
+              </div>
+
+              <h3 class="text-xl font-bold mb-4 relative z-10">
+                Academic Excellence
+              </h3>
+
+              <p class="text-gray-400 mb-6 relative z-10">
+                Ranked 1st among Dean's Listers in my 1st year of college,
+                reflecting my strong commitment to academic performance from the
+                beginning of my college journey.
+              </p>
+
+              <div
+                class="flex items-center text-sm text-gray-500 relative z-10"
+              >
+                <i class="fas fa-star mr-2 text-yellow-500"></i>
+                <span class="mr-4">Dean's Lister</span>
+                <i class="fas fa-calendar mr-2 text-blue-500"></i>
+                <span>2023 - 2024</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 bg-gray-900 relative">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold mb-2">
+            Recent <span class="gradient-text">Projects</span>
+          </h2>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto"
+          ></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="card-hover bg-gray-800 rounded-xl shadow-xl overflow-hidden"
+          >
+            <div class="relative h-56">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center"
+              >
+                <i class="fas fa-shield-alt text-white text-5xl"></i>
+              </div>
+              <div
+                class="absolute inset-0 bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6"
+              >
+                <h4 class="text-white font-bold text-xl mb-2">TriProtect</h4>
+                <p class="text-gray-300 text-center mb-4">
+                  Emergency response system with real-time alerts and tracking
+                </p>
+                <button
+                  class="project-details-btn bg-white text-indigo-600 font-medium py-2 px-4 rounded-lg hover:bg-indigo-600 hover:text-white transition duration-300"
+                  data-project="triprotect"
+                  fdprocessedid="7gxdi"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-white">
+                TriProtect Emergency System
+              </h3>
+              <p class="text-gray-400 mb-4">
+                A comprehensive emergency response system designed to provide
+                immediate assistance in critical situations.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-blue-900 bg-opacity-30 text-blue-400 px-3 py-1 rounded-full text-xs"
+                  >PHP</span
+                >
+                <span
+                  class="bg-yellow-900 bg-opacity-30 text-yellow-400 px-3 py-1 rounded-full text-xs"
+                  >JavaScript</span
+                >
+                <span
+                  class="bg-green-900 bg-opacity-30 text-green-400 px-3 py-1 rounded-full text-xs"
+                  >MySQL</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card-hover bg-gray-800 rounded-xl shadow-xl overflow-hidden"
+          >
+            <div class="relative h-56">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-purple-600 to-purple-800 flex items-center justify-center"
+              >
+                <i class="fas fa-vote-yea text-white text-5xl"></i>
+              </div>
+              <div
+                class="absolute inset-0 bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6"
+              >
+                <h4 class="text-white font-bold text-xl mb-2">Voting System</h4>
+                <p class="text-gray-300 text-center mb-4">
+                  Secure electronic voting platform with real-time results
+                </p>
+                <button
+                  class="project-details-btn bg-white text-indigo-600 font-medium py-2 px-4 rounded-lg hover:bg-indigo-600 hover:text-white transition duration-300"
+                  data-project="voting"
+                  fdprocessedid="1ks9k"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-white">Voting System</h3>
+              <p class="text-gray-400 mb-4">
+                A secure and efficient electronic voting system developed for
+                student council elections and organizational voting.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-blue-900 bg-opacity-30 text-blue-400 px-3 py-1 rounded-full text-xs"
+                  >PHP</span
+                >
+                <span
+                  class="bg-green-900 bg-opacity-30 text-green-400 px-3 py-1 rounded-full text-xs"
+                  >MySQL</span
+                >
+                <span
+                  class="bg-red-900 bg-opacity-30 text-red-400 px-3 py-1 rounded-full text-xs"
+                  >HTML/CSS</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card-hover bg-gray-800 rounded-xl shadow-xl overflow-hidden"
+          >
+            <div class="relative h-56">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-green-600 to-green-800 flex items-center justify-center"
+              >
+                <i class="fas fa-boxes text-white text-5xl"></i>
+              </div>
+              <div
+                class="absolute inset-0 bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6"
+              >
+                <h4 class="text-white font-bold text-xl mb-2">
+                  Inventory Tool
+                </h4>
+                <p class="text-gray-300 text-center mb-4">
+                  Comprehensive inventory management with analytics
+                </p>
+                <button
+                  class="project-details-btn bg-white text-indigo-600 font-medium py-2 px-4 rounded-lg hover:bg-indigo-600 hover:text-white transition duration-300"
+                  data-project="inventory"
+                  fdprocessedid="hlbzdu"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-white">Inventory Tool</h3>
+              <p class="text-gray-400 mb-4">
+                A comprehensive inventory management system designed to track
+                and manage resources efficiently.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-indigo-900 bg-opacity-30 text-indigo-400 px-3 py-1 rounded-full text-xs"
+                  >VB.NET</span
+                >
+                <span
+                  class="bg-green-900 bg-opacity-30 text-green-400 px-3 py-1 rounded-full text-xs"
+                  >MySQL</span
+                >
+                <span
+                  class="bg-yellow-900 bg-opacity-30 text-yellow-400 px-3 py-1 rounded-full text-xs"
+                  >JavaScript</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-16 text-center">
+          <button
+            id="view-all-projects"
+            class="gradient-bg text-white font-medium py-3 px-8 rounded-lg transition duration-300 inline-block hover:shadow-lg hover:shadow-indigo-500/30 transform hover:-translate-y-1"
+            fdprocessedid="rwfqw"
+          >
+            View All Projects
+          </button>
+        </div>
+      </div>
+
+      <!-- Project Modal -->
+      <div
+        id="project-modal"
+        class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden"
+      >
+        <div
+          class="bg-gray-900 rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto p-8 border border-gray-700 relative"
+        >
+          <button
+            id="close-modal"
+            class="absolute top-4 right-4 text-gray-400 hover:text-white"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+
+          <div id="project-content">
+            <!-- Content will be dynamically inserted here -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-gray-800 relative">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold mb-2">
+            My <span class="gradient-text">Services</span>
+          </h2>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto"
+          ></div>
+          <p class="text-gray-400 mt-4 max-w-2xl mx-auto">
+            Helping fellow IT students succeed through various support services
+            tailored to academic needs.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="card-hover bg-gray-900 rounded-xl shadow-xl p-8 border border-gray-700 relative"
+          >
+            <div
+              class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-blue-400"
+            ></div>
+
+            <div
+              class="w-16 h-16 bg-indigo-900 bg-opacity-20 rounded-xl flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-code text-indigo-400 text-2xl"></i>
+            </div>
+
+            <h3 class="text-xl font-bold mb-4 text-white">Code Assistance</h3>
+
+            <p class="text-gray-400 mb-6">
+              Get help with debugging, code optimization, and implementing
+              complex algorithms in various programming languages.
+            </p>
+
+            <ul class="text-gray-400 space-y-2 mb-6">
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-indigo-400 mr-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                Bug fixing
+              </li>
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-indigo-400 mr-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                Code optimization
+              </li>
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-indigo-400 mr-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                Algorithm implementation
+              </li>
+            </ul>
+
+            <a
+              href="#contact"
+              class="text-indigo-400 hover:text-white transition-colors duration-300 inline-flex items-center"
+            >
+              <span>Learn more</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 ml-1"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+          </div>
+
+          <div
+            class="card-hover bg-gray-900 rounded-xl shadow-xl p-8 border border-gray-700 relative"
+          >
+            <div
+              class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-purple-400"
+            ></div>
+
+            <div
+              class="w-16 h-16 bg-purple-900 bg-opacity-20 rounded-xl flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-project-diagram text-purple-400 text-2xl"></i>
+            </div>
+
+            <h3 class="text-xl font-bold mb-4 text-white">
+              Project Development
+            </h3>
+
+            <p class="text-gray-400 mb-6">
+              Guidance and collaboration on academic projects, from
+              conceptualization to implementation and documentation.
+            </p>
+
+            <ul class="text-gray-400 space-y-2 mb-6">
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-purple-400 mr-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                Project planning
+              </li>
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-purple-400 mr-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                System architecture
+              </li>
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-purple-400 mr-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                Implementation support
+              </li>
+            </ul>
+
+            <a
+              href="#contact"
+              class="text-purple-400 hover:text-white transition-colors duration-300 inline-flex items-center"
+            >
+              <span>Learn more</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 ml-1"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+          </div>
+
+          <div
+            class="card-hover bg-gray-900 rounded-xl shadow-xl p-8 border border-gray-700 relative"
+          >
+            <div
+              class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-500 to-green-400"
+            ></div>
+
+            <div
+              class="w-16 h-16 bg-green-900 bg-opacity-20 rounded-xl flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-file-alt text-green-400 text-2xl"></i>
+            </div>
+
+            <h3 class="text-xl font-bold mb-4 text-white">
+              Documentation Support
+            </h3>
+
+            <p class="text-gray-400 mb-6">
+              Assistance with technical documentation, project reports, and
+              academic papers related to IT subjects.
+            </p>
+
+            <ul class="text-gray-400 space-y-2 mb-6">
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-green-400 mr-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                Technical writing
+              </li>
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-green-400 mr-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                Project documentation
+              </li>
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-green-400 mr-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                Research assistance
+              </li>
+            </ul>
+
+            <a
+              href="#contact"
+              class="text-green-400 hover:text-white transition-colors duration-300 inline-flex items-center"
+            >
+              <span>Learn more</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 ml-1"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <button
+            id="view-all-services"
+            class="border-2 border-indigo-500 text-white font-medium py-3 px-8 rounded-lg transition duration-300 inline-block hover:bg-indigo-500 hover:bg-opacity-20"
+            fdprocessedid="dmf9s"
+          >
+            View All Services
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-gray-900 relative">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold mb-2">
+            Get in <span class="gradient-text">Touch</span>
+          </h2>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto"
+          ></div>
+          <p class="text-gray-400 mt-4 max-w-2xl mx-auto">
+            Have a question or need assistance with your IT projects? Feel free
+            to reach out!
+          </p>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-8">
+          <div class="md:w-1/2">
+            <div
+              class="bg-gray-800 p-8 rounded-xl shadow-xl border border-gray-700 h-full"
+            >
+              <h3 class="text-2xl font-bold gradient-text mb-6">
+                Contact Information
+              </h3>
+
+              <div class="space-y-6">
+                <div
+                  class="flex items-start group hover:bg-gray-700/30 p-3 rounded-lg transition-all duration-300"
+                >
+                  <div
+                    class="w-16 h-16 bg-indigo-900 bg-opacity-30 rounded-xl flex items-center justify-center mr-4 flex-shrink-0 group-hover:bg-indigo-800 transition-all duration-300"
+                  >
+                    <i
+                      class="fas fa-envelope text-indigo-400 text-xl group-hover:text-indigo-300 transition-colors duration-300"
+                    ></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-white mb-1 text-lg">Email</h4>
+                    <p class="text-gray-300 text-base">
+                      calangpaul422@gmail.com
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex items-start group hover:bg-gray-700/30 p-3 rounded-lg transition-all duration-300"
+                >
+                  <div
+                    class="w-16 h-16 bg-purple-900 bg-opacity-30 rounded-xl flex items-center justify-center mr-4 flex-shrink-0 group-hover:bg-purple-800 transition-all duration-300"
+                  >
+                    <i
+                      class="fas fa-phone text-purple-400 text-xl group-hover:text-purple-300 transition-colors duration-300"
+                    ></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-white mb-1 text-lg">Phone</h4>
+                    <p class="text-gray-300 text-base">+63 915 122 8125</p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex items-start group hover:bg-gray-700/30 p-3 rounded-lg transition-all duration-300"
+                >
+                  <div
+                    class="w-16 h-16 bg-green-900 bg-opacity-30 rounded-xl flex items-center justify-center mr-4 flex-shrink-0 group-hover:bg-green-800 transition-all duration-300"
+                  >
+                    <i
+                      class="fas fa-map-marker-alt text-green-400 text-xl group-hover:text-green-300 transition-colors duration-300"
+                    ></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-white mb-1 text-lg">Location</h4>
+                    <p class="text-gray-300 text-base">
+                      Surigao City, Philippines
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8 pt-6 border-t border-gray-700">
+                <div class="flex space-x-4 mt-4">
+                  <a
+                    href="https://www.facebook.com/paul.calang.2024"
+                    class="w-12 h-12 bg-gray-700 rounded-lg flex items-center justify-center text-gray-400 hover:bg-indigo-500 hover:text-white hover:scale-105 transition-all duration-300"
+                  >
+                    <i class="fab fa-facebook-f text-lg"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/paulcalang-dev"
+                    class="w-12 h-12 bg-gray-700 rounded-lg flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white hover:scale-105 transition-all duration-300"
+                  >
+                    <i class="fab fa-linkedin-in text-lg"></i>
+                  </a>
+                  <a
+                    href="https://github.com/PooruDev"
+                    class="w-12 h-12 bg-gray-700 rounded-lg flex items-center justify-center text-gray-400 hover:bg-gray-800 hover:text-white hover:scale-105 transition-all duration-300"
+                  >
+                    <i class="fab fa-github text-lg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:w-1/2">
+            <div
+              class="bg-gray-800 p-8 rounded-xl shadow-xl border border-gray-700"
+            >
+              <h3 class="text-2xl font-bold gradient-text mb-6">
+                Send a Message
+              </h3>
+
+              <form
+                id="contact-form"
+                class="space-y-6"
+                action="mailto:calangpaul422@gmail.com"
+                method="post"
+                enctype="text/plain"
+              >
+                <div>
+                  <label for="name" class="block text-gray-300 mb-2 text-sm"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-indigo-500 text-white"
+                    required=""
+                    fdprocessedid="hwyyki"
+                  />
+                </div>
+
+                <div>
+                  <label for="email" class="block text-gray-300 mb-2 text-sm"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-indigo-500 text-white"
+                    required=""
+                    fdprocessedid="fwe3lf"
+                  />
+                </div>
+
+                <div>
+                  <label for="subject" class="block text-gray-300 mb-2 text-sm"
+                    >Subject</label
+                  >
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-indigo-500 text-white"
+                    required=""
+                    fdprocessedid="la25w7"
+                  />
+                </div>
+
+                <div>
+                  <label for="message" class="block text-gray-300 mb-2 text-sm"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-indigo-500 text-white resize-none"
+                    required=""
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="gradient-bg text-white font-medium py-3 px-8 rounded-lg transition duration-300 inline-block hover:shadow-lg hover:shadow-indigo-500/30 transform hover:-translate-y-1 w-full"
+                  fdprocessedid="kvqr0i"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-12">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-8 md:mb-0 text-center md:text-left">
+            <a href="#" class="text-2xl font-bold">
+              <span class="text-white">&lt;</span>
+              <span class="gradient-text">Paul</span>
+              <span class="text-white">/&gt;</span>
+            </a>
+            <p class="text-gray-400 mt-2">Helping IT students succeed.</p>
+          </div>
+
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full lg:w-auto"
+          >
+            <div class="text-center sm:text-left">
+              <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="#about"
+                    class="text-gray-400 hover:text-white transition"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#skills"
+                    class="text-gray-400 hover:text-white transition"
+                    >Skills</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#projects"
+                    class="text-gray-400 hover:text-white transition"
+                    >Projects</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="text-center sm:text-left">
+              <h4 class="text-white font-semibold mb-4">Services</h4>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="#services"
+                    class="text-gray-400 hover:text-white transition"
+                    >Code Assistance</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#services"
+                    class="text-gray-400 hover:text-white transition"
+                    >Project Development</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#services"
+                    class="text-gray-400 hover:text-white transition"
+                    >Documentation</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="text-center sm:text-left">
+              <h4 class="text-white font-semibold mb-4">Contact</h4>
+              <ul class="space-y-2">
+                <li class="text-gray-400">calangpaul422@gmail.com</li>
+                <li class="text-gray-400">+63 915 122 8125</li>
+                <li class="text-gray-400">Surigao City, Philippines</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-800 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4"
+        >
+          <p class="text-gray-500 text-sm text-center sm:text-left">
+            © 2025 Paul Calang. All rights reserved.
+          </p>
+
+          <div class="flex space-x-4">
+            <a
+              href="https://www.facebook.com/paul.calang.2024"
+              class="text-gray-400 hover:text-white transition"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/paulcalang-dev"
+              class="text-gray-400 hover:text-white transition"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/PooruDev"
+              class="text-gray-400 hover:text-white transition"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button
+      id="back-to-top"
+      class="fixed bottom-8 right-8 bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg z-50 transition-all duration-300 opacity-100 visible"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+        ></path>
+      </svg>
+    </button>
+
+    <script src="main.js"></script>
+    <script>
+      (function () {
+        function c() {
+          var b = a.contentDocument || a.contentWindow.document;
+          if (b) {
+            var d = b.createElement("script");
+            d.innerHTML =
+              "window.__CF$cv$params={r:'95301c5d1707feeb',t:'MTc1MDQ3MzMwOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+            b.getElementsByTagName("head")[0].appendChild(d);
+          }
+        }
+        if (document.body) {
+          var a = document.createElement("iframe");
+          a.height = 1;
+          a.width = 1;
+          a.style.position = "absolute";
+          a.style.top = 0;
+          a.style.left = 0;
+          a.style.border = "none";
+          a.style.visibility = "hidden";
+          document.body.appendChild(a);
+          if ("loading" !== document.readyState) c();
+          else if (window.addEventListener)
+            document.addEventListener("DOMContentLoaded", c);
+          else {
+            var e = document.onreadystatechange || function () {};
+            document.onreadystatechange = function (b) {
+              e(b);
+              "loading" !== document.readyState &&
+                ((document.onreadystatechange = e), c());
+            };
+          }
+        }
+      })();
+    </script>
+    <iframe
+      height="1"
+      width="1"
+      style="
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        border: none;
+        visibility: hidden;
+      "
+      src="./saved_resource.html"
+    ></iframe>
+
+    <span id="PING_IFRAME_FORM_DETECTION" style="display: none"></span>
+  </body>
+</html>
